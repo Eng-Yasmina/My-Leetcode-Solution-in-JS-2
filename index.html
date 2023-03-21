@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yasmine-ITI-CMS</title>
+</head>
+<body>
+    <script>
+
+    // Calculate the circle area
+    let response1 = '';
+    while (response1==='' || !(/[0-9]/.test(response1))) {
+        response1 = prompt('What is the value of your circles raduis', '');
+    }
+    alert(`Total area of the circle is ${Math.PI * response1 * response1}`);
+
+    // Calculate the square root
+    let response2 = '';
+    while (response2==='' ||  !(/[0-9]/.test(response2))) {
+        response2 = prompt('What is the value you want to calculate its square root', '');
+    } 
+    alert(`Square root of 16 is ${Math.sqrt(response2)}`);
+
+    // Calculate the cos
+    let response3 = '';
+    while (response3==='' ||  !(/[0-9]/.test(response3))) {
+        response3 = prompt('Enter an angle to calculate its cos', '');
+    } 
+    document.write(`<h1 style="color: Red;">cos is ${Math.cos(response3)}</h1>`); 
+
+    </script>
+</body>
+</html>
